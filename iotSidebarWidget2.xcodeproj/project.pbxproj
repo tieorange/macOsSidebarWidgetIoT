@@ -11,7 +11,36 @@
 		63C358FD207F8796009C8C69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C358FC207F8796009C8C69 /* ViewController.swift */; };
 		63C358FF207F8797009C8C69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C358FE207F8797009C8C69 /* Assets.xcassets */; };
 		63C35902207F8797009C8C69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C35900207F8797009C8C69 /* Main.storyboard */; };
+		63C35911207F87C2009C8C69 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C35910207F87C2009C8C69 /* NotificationCenter.framework */; };
+		63C35914207F87C2009C8C69 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C35913207F87C2009C8C69 /* TodayViewController.swift */; };
+		63C35917207F87C2009C8C69 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C35915207F87C2009C8C69 /* TodayViewController.xib */; };
+		63C3591B207F87C2009C8C69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63C35919207F87C2009C8C69 /* InfoPlist.strings */; };
+		63C3591F207F87C2009C8C69 /* IoT-Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 63C3590E207F87C2009C8C69 /* IoT-Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63C3591D207F87C2009C8C69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C358EF207F8796009C8C69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C3590D207F87C2009C8C69;
+			remoteInfo = "IoT-Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63C35923207F87C2009C8C69 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				63C3591F207F87C2009C8C69 /* IoT-Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		63C358F7207F8796009C8C69 /* iotSidebarWidget2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iotSidebarWidget2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +50,13 @@
 		63C35901207F8797009C8C69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63C35903207F8797009C8C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63C35904207F8797009C8C69 /* iotSidebarWidget2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iotSidebarWidget2.entitlements; sourceTree = "<group>"; };
+		63C3590E207F87C2009C8C69 /* IoT-Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "IoT-Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C35910207F87C2009C8C69 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		63C35913207F87C2009C8C69 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		63C35916207F87C2009C8C69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		63C35918207F87C2009C8C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C3591A207F87C2009C8C69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		63C3591C207F87C2009C8C69 /* IoT_Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IoT_Widget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +67,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63C3590B207F87C2009C8C69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C35911207F87C2009C8C69 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				63C358F9207F8796009C8C69 /* iotSidebarWidget2 */,
+				63C35912207F87C2009C8C69 /* IoT-Widget */,
+				63C3590F207F87C2009C8C69 /* Frameworks */,
 				63C358F8207F8796009C8C69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				63C358F7207F8796009C8C69 /* iotSidebarWidget2.app */,
+				63C3590E207F87C2009C8C69 /* IoT-Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +110,26 @@
 			path = iotSidebarWidget2;
 			sourceTree = "<group>";
 		};
+		63C3590F207F87C2009C8C69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63C35910207F87C2009C8C69 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63C35912207F87C2009C8C69 /* IoT-Widget */ = {
+			isa = PBXGroup;
+			children = (
+				63C35913207F87C2009C8C69 /* TodayViewController.swift */,
+				63C35915207F87C2009C8C69 /* TodayViewController.xib */,
+				63C35918207F87C2009C8C69 /* Info.plist */,
+				63C35919207F87C2009C8C69 /* InfoPlist.strings */,
+				63C3591C207F87C2009C8C69 /* IoT_Widget.entitlements */,
+			);
+			path = "IoT-Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,15 +140,34 @@
 				63C358F3207F8796009C8C69 /* Sources */,
 				63C358F4207F8796009C8C69 /* Frameworks */,
 				63C358F5207F8796009C8C69 /* Resources */,
+				63C35923207F87C2009C8C69 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				63C3591E207F87C2009C8C69 /* PBXTargetDependency */,
 			);
 			name = iotSidebarWidget2;
 			productName = iotSidebarWidget2;
 			productReference = 63C358F7207F8796009C8C69 /* iotSidebarWidget2.app */;
 			productType = "com.apple.product-type.application";
+		};
+		63C3590D207F87C2009C8C69 /* IoT-Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63C35920207F87C2009C8C69 /* Build configuration list for PBXNativeTarget "IoT-Widget" */;
+			buildPhases = (
+				63C3590A207F87C2009C8C69 /* Sources */,
+				63C3590B207F87C2009C8C69 /* Frameworks */,
+				63C3590C207F87C2009C8C69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IoT-Widget";
+			productName = "IoT-Widget";
+			productReference = 63C3590E207F87C2009C8C69 /* IoT-Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +180,9 @@
 				ORGANIZATIONNAME = "Andrii Kovalchuk";
 				TargetAttributes = {
 					63C358F6207F8796009C8C69 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					63C3590D207F87C2009C8C69 = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
@@ -112,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				63C358F6207F8796009C8C69 /* iotSidebarWidget2 */,
+				63C3590D207F87C2009C8C69 /* IoT-Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +213,15 @@
 			files = (
 				63C358FF207F8797009C8C69 /* Assets.xcassets in Resources */,
 				63C35902207F8797009C8C69 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C3590C207F87C2009C8C69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C35917207F87C2009C8C69 /* TodayViewController.xib in Resources */,
+				63C3591B207F87C2009C8C69 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +237,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63C3590A207F87C2009C8C69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C35914207F87C2009C8C69 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63C3591E207F87C2009C8C69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63C3590D207F87C2009C8C69 /* IoT-Widget */;
+			targetProxy = 63C3591D207F87C2009C8C69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		63C35900207F8797009C8C69 /* Main.storyboard */ = {
@@ -147,6 +262,22 @@
 				63C35901207F8797009C8C69 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63C35915207F87C2009C8C69 /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63C35916207F87C2009C8C69 /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		63C35919207F87C2009C8C69 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63C3591A207F87C2009C8C69 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -268,6 +399,7 @@
 		63C35908207F8797009C8C69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iotSidebarWidget2/iotSidebarWidget2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +419,7 @@
 		63C35909207F8797009C8C69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iotSidebarWidget2/iotSidebarWidget2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +432,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.infullmobile.iotSidebarWidget2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		63C35921207F87C2009C8C69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "IoT-Widget/IoT_Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G4T5ATNHCG;
+				INFOPLIST_FILE = "IoT-Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.infullmobile.iotSidebarWidget2.IoT-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		63C35922207F87C2009C8C69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "IoT-Widget/IoT_Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G4T5ATNHCG;
+				INFOPLIST_FILE = "IoT-Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.infullmobile.iotSidebarWidget2.IoT-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -320,6 +493,15 @@
 			buildConfigurations = (
 				63C35908207F8797009C8C69 /* Debug */,
 				63C35909207F8797009C8C69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63C35920207F87C2009C8C69 /* Build configuration list for PBXNativeTarget "IoT-Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C35921207F87C2009C8C69 /* Debug */,
+				63C35922207F87C2009C8C69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

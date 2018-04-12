@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="IoT_Widget" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView simulatedAppContext="notificationCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="140"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N63-QZ-FSc">
+                    <rect key="frame" x="24" y="107" width="277" height="25"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Temperature: 10℃" id="GFO-rr-LLR">
+                        <font key="font" metaFont="system" size="21"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sHd-94-8Kl">
+                    <rect key="frame" x="24" y="74" width="277" height="25"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Humidity: 34%" id="ecf-iv-q02">
+                        <font key="font" metaFont="system" size="21"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mun-7g-b7j">
+                    <rect key="frame" x="24" y="41" width="277" height="25"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="PM10: 20%" id="BzE-F6-Hnt">
+                        <font key="font" metaFont="system" size="21"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0Bp-rk-4No">
+                    <rect key="frame" x="24" y="8" width="277" height="25"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="PM2: 560%" id="tYz-sm-URq">
+                        <font key="font" metaFont="system" size="21"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="sHd-94-8Kl" firstAttribute="trailing" secondItem="N63-QZ-FSc" secondAttribute="trailing" id="11w-Xk-lSW"/>
+                <constraint firstAttribute="bottom" secondItem="0Bp-rk-4No" secondAttribute="bottom" constant="8" id="AKY-mx-YvS"/>
+                <constraint firstItem="sHd-94-8Kl" firstAttribute="top" secondItem="N63-QZ-FSc" secondAttribute="bottom" constant="8" id="Fbz-3T-qfk"/>
+                <constraint firstItem="0Bp-rk-4No" firstAttribute="leading" secondItem="Mun-7g-b7j" secondAttribute="leading" id="GX5-yH-wLf"/>
+                <constraint firstItem="Mun-7g-b7j" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="26" id="Jah-DA-pRg"/>
+                <constraint firstItem="N63-QZ-FSc" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="26" id="KRG-6E-wLy"/>
+                <constraint firstItem="sHd-94-8Kl" firstAttribute="leading" secondItem="N63-QZ-FSc" secondAttribute="leading" id="NbX-iH-OhS"/>
+                <constraint firstItem="0Bp-rk-4No" firstAttribute="top" secondItem="Mun-7g-b7j" secondAttribute="bottom" constant="8" id="Oii-tX-7Fa"/>
+                <constraint firstItem="0Bp-rk-4No" firstAttribute="trailing" secondItem="Mun-7g-b7j" secondAttribute="trailing" id="V4k-hD-NE2"/>
+                <constraint firstItem="Mun-7g-b7j" firstAttribute="leading" secondItem="sHd-94-8Kl" secondAttribute="leading" id="WaZ-Lf-qmB"/>
+                <constraint firstItem="Mun-7g-b7j" firstAttribute="top" secondItem="sHd-94-8Kl" secondAttribute="bottom" constant="8" id="aPt-uI-jsf"/>
+                <constraint firstAttribute="trailing" secondItem="N63-QZ-FSc" secondAttribute="trailing" constant="26" id="kVk-8n-IKt"/>
+                <constraint firstItem="N63-QZ-FSc" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="vDd-dB-3WD"/>
+                <constraint firstItem="Mun-7g-b7j" firstAttribute="trailing" secondItem="sHd-94-8Kl" secondAttribute="trailing" id="zxd-dT-xrw"/>
+            </constraints>
+            <point key="canvasLocation" x="-162.5" y="163.5"/>
+        </customView>
+    </objects>
+</document>
